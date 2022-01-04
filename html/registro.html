@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style/style.css">
+    <title>Formulario de Registro</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand">
+                    <img src="../images/Logo.png" alt="" width="45" height="39" class="d-inline-block align-text-top">
+                    Peliculas para ti
+                </a>
+                <div class="collapse navbar-collapse estilo abs-center" id="navbarNav">
+                    <ul class="navbar-nav ">
+                        <li class="nav-item mx-5">
+                            <a class="nav-link active text-align-center" aria-current="page"
+                                href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="registro.html">Registro</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container pt-1 pb-5 w-50">
+
+            <div class="container-md mt-5 w-75" id="formulario">
+                <h4 class="text">FORMULARIO DE REGISTRO</h4>
+                <form>
+                    <div class="input-group input-group-sm mb-3 ">
+                        <span class="input-group-text">Nombre</span>
+                        <input id="txtname" type="text" class="form-control" aria-label="Sizing example input"
+                            aria-describedby="inputGroup-sizing-sm" required>
+                    </div>
+                    <div class="input-group input-group-sm mb-3">
+                        <span class="input-group-text">Apellido</span>
+                        <input id="txtsurname" type="text" class="form-control" aria-label="Sizing example input"
+                            aria-describedby="inputGroup-sizing-sm" required>
+                    </div>
+                    <div class="input-group input-group-sm mb-3">
+                        <span class="input-group-text">Teléfono</span>
+                        <input id="phone" type="text" class="form-control" aria-label="Sizing example input"
+                            aria-describedby="inputGroup-sizing-sm" required>
+                    </div>
+                    <div class="input-group input-group-sm mb-3">
+                        <span class="input-group-text">Dirección</span>
+                        <input id="txtadress" type="text" class="form-control" aria-label="Sizing example input"
+                            aria-describedby="inputGroup-sizing-sm" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="input-group-text">Observaciones</label>
+                        <textarea id="txtnote" class="form-control" id="exampleFormControlTextarea1"
+                            rows="3"></textarea>
+                    </div>
+                    <div class="abs-center">
+                        <button id="btnSend" type="button" class="btn btn-info btn-lg">Enviar</button>
+                    </div>
+                </form>
+            </div>
+            <div id="validar">
+
+            </div>
+        </div>
+    </main>
+    <!-- -------Script-------- -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.3.3/dist/sweetalert2.all.min.js"></script>
+    <script src="../script/formulario.js"></script>
+</body>
+
+</html>

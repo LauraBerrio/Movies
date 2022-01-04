@@ -61,14 +61,32 @@ h3{
 h6{
     color: #000000;
     font-family: 'Fuzzy Bubbles', cursive;
+    font-size: 12px;
 }
 .bg{
-    background-color: #008891;
-    margin-top: 150px;
-    margin-right: 50px;
+    background-color: #2f2e3079;
     color: wheat;
+    
 }
 p{
-    font-size: 19px;
+    font-size: 18px;
     color: #000000;
+    font-family: 'Fuzzy Bubbles', cursive;
+}
+.btn-dark{
+    background: #abb0f3;
+    color: rgb(21, 1, 32);
+    position: absolute;
+    top: 10px;
+    right: 20px;
+
+}
+.btn-dark:hover{
+    background-color: rgb(39, 5, 85);
+}
+.content-form{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    
 }

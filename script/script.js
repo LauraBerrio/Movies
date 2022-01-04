@@ -23,21 +23,19 @@ function cargarMovie() {
         const { id, name, image } = pelicula;
         templateCard.querySelector('h5').textContent = name;
         templateCard.querySelector('img').setAttribute('src', image);
-        templateCard.querySelector('img').setAttribute('alt', name);
-        templateCard.querySelector('a').textContent = id;
+        //templateCard.querySelector('img').setAttribute('alt', name);
+        templateCard.querySelector('button').dataset.id = id;
         const clone = templateCard.cloneNode(true);
         fragment.appendChild(clone);
-        //modal(id);
+       
 
 
     })
     movie.appendChild(fragment);
-
+    
 }
-function modal(id) {
-    let aifon = id;
 
-}
+
 
 
 

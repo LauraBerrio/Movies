@@ -37,7 +37,13 @@ const cleanInputs = () => {
 }
 //Validaciones del formulario
 function validacionFormulario(nombre, apellido, telefono, direccion, observacion) {
-    if (isNaN(telefono)) {
+    if((nombre == 0) || (apellido == 0)){
+        crearValidar('Por favor llena todos los campos')
+    }
+    else if((telefono == 0) || (direccion == 0)){
+        crearValidar('Por favor llena todos los campos')
+    }
+    else if (isNaN(telefono)) {
         crearValidar('Por favor digite un número de teléfono')
     }
     else {
@@ -46,12 +52,14 @@ function validacionFormulario(nombre, apellido, telefono, direccion, observacion
 
 }
 function crearValidar(msj) {
-    const validar = document.getElementById('validar');
-    validar.innerHTML = '';
-    validar.innerHTML += `
-    <div class="alert alert-danger alert-dismissible fade-show" role="alert">${msj}
-    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-    </div>`
+    Swal.fire(msj, '', 'error')
+    
+    // const validar = document.getElementById('validar');
+    // validar.innerHTML = '';
+    // validar.innerHTML += `
+    // <div class="alert alert-danger alert-dismissible fade-show" role="alert">${msj}
+    // <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    // </div>`
 }
 //Agregar los datos al arreglo
 function agregarDatos(nombre, apellido, telefono, direccion, observacion) {
